@@ -1,4 +1,5 @@
-import { Button, Image, Pressable, Text, View } from 'react-native';
+import { Image, Pressable, Text, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import logo from '../../../assets/logo.png';
 import styles from './styles';
 import estudar from '../../../assets/estudar.png';
@@ -6,6 +7,8 @@ import aulas from '../../../assets/aulas.png';
 import coracao from '../../../assets/coracao.png';
 
 export function Home() {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <Image
@@ -26,7 +29,10 @@ export function Home() {
           <Text style={styles.textBtn}>Estudar</Text>
         </Pressable>
 
-        <Pressable style={[styles.btn, styles.btnClass]}>
+        <Pressable
+          style={[styles.btn, styles.btnClass]}
+          onPress={() => navigation.navigate('class')}
+        >
           <Image
             style={styles.iconBtn}
             source={aulas}
@@ -36,8 +42,7 @@ export function Home() {
       </View>
 
       <Text style={styles.text}>
-        Total de 285 conexões já realizadas {' '}
-        <Image source={coracao} />
+        Total de 285 conexões já realizadas <Image source={coracao} />
       </Text>
     </View>
   );
