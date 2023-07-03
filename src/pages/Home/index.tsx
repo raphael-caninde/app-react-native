@@ -21,7 +21,10 @@ export function Home() {
       </Text>
 
       <View style={styles.btnContainer}>
-        <Pressable style={[styles.btn, styles.btnStudy]}>
+        <Pressable
+          onPress={() => navigation.navigate('study')}
+          style={[styles.btn, styles.btnStudy]}
+        >
           <Image
             style={styles.iconBtn}
             source={estudar}
