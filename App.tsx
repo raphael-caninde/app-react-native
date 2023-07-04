@@ -5,6 +5,7 @@ import {
   Poppins_400Regular,
   Poppins_600SemiBold,
   Poppins_700Bold,
+  Poppins_500Medium,
 } from '@expo-google-fonts/poppins';
 import Routes from './src/routes/routes';
 
@@ -13,6 +14,7 @@ export default function App() {
     Poppins_600SemiBold,
     Poppins_400Regular,
     Poppins_700Bold,
+    Poppins_500Medium,
   });
 
   if (!fontsLoaded) {
