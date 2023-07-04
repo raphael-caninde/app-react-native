@@ -1,4 +1,3 @@
-import { useTheme } from '@react-navigation/native';
 import { View } from 'react-native';
 
 interface ScreenIndicatorsProps {

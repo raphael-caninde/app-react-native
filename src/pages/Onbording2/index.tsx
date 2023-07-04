@@ -10,9 +10,9 @@ import {
 
 import { ScreenIndicators } from '../../components/ScreenIndicators';
 
-import voltar from '../../assets/Voltar.png';
-import background from '../../assets/BackOnbording2.png';
-import aulas from '../../assets/aulasOnbording2.png';
+import voltar from '../../../assets/Voltar.png';
+import background from '../../../assets/BackOnbording2.png';
+import aulas from '../../../assets/aulasOnbording2.png';
 
 import styles from './styles';
 
