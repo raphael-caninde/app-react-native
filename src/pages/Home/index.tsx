@@ -7,7 +7,7 @@ import aulas from '../../../assets/aulas.png';
 import coracao from '../../../assets/coracao.png';
 
 export function Home() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
 
   return (
     <View style={styles.container}>
